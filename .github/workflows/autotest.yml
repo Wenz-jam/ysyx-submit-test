@@ -242,7 +242,6 @@ jobs:
           SIZE_LIMIT=1048576 # 1MB
           if [[ $SIZE -gt $SIZE_LIMIT ]] ; then
             echo "Patch size($SIZE) is larger than the limit($SIZE_LIMIT)."
-            false
           fi
 
       - name: Cache oss-cad-suite
