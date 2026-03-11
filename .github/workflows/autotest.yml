@@ -118,6 +118,7 @@ jobs:
           mkdir -p $YSYX_HOME
           cd $YSYX_HOME/..
           git clone --depth 1 -b ${{ needs.parse.outputs.BRANCH }} ${{ needs.parse.outputs.REPO }} ysyx-workbench
+          git checkout d783abb6ffdff70725bfcbc3c37ec2b81205a99f
 
       - name: Create orphan branch
         run: |
